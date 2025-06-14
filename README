@@ -1,0 +1,27 @@
+# MagicContainer Project
+
+## 👩‍💻 Overview
+This project implements a generic container class `MyContainer` for comparable types (like `int`, `double`, `std::string`).
+It supports custom iterators for various traversal orders.
+
+## 📦 Features
+- `add` – Add an element
+- `remove` – Remove all occurrences of an element
+- `size` – Get the number of elements
+- `operator<<` – Print the container
+- **Iterators**:
+  - `AscendingOrder`
+  - `DescendingOrder`
+  - `SideCrossOrder`
+  - `ReverseOrder`
+  - `Order`
+  - `MiddleOutOrder`
+
+## 🧪 Testing
+Tests are written using [Doctest](https://github.com/doctest/doctest).  
+The file `doctest.h` is located in the `include/` folder.
+
+To run tests:
+```bash
+make test
+./test_exec
